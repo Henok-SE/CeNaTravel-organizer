@@ -408,15 +408,6 @@ nav.fa {
         height: auto;
     } 
 }
-
-
-
-
-
-
-
-
-
           /* footer */
 footer {
     background: green;
@@ -477,3 +468,222 @@ social-icons a:hover {
         color: #f44336;
     }
 }
+
+/* tour page------------------------------ */
+.packages {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+.packages h1 {
+    text-align: center; 
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.packages .package-container {
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.packages .package-container .package-card {
+    background: #fff;
+    border-radius: 10px;    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+.packages .package-container .package-card:hover {
+    transform: translateY(-10px);   
+}
+.packages .package-container .package-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.packages .package-container .package-card h3 {
+    font-size: 24px;
+    margin: 15px;
+}
+.packages .package-container .package-card p {        
+    font-size: 16px;
+    margin: 0 15px 15px;
+}
+.packages .package-container .package-card a {    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #f44336;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 15px 15px;
+    transition: background 0.3s ease-in-out;
+}
+.packages .package-container .package-card a:hover {
+    background: #d32f2f;    
+    transition: background 0.3s ease-in-out;
+}
+.packages .package-container .package-card .package-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #f44336;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 15px 15px;
+    transition: background 0.3s ease-in-out;
+}
+.packages .package-container .package-card .package-btn:hover {
+    background: #850c0c;    
+    transition: background 0.3s ease-in-out;
+}
+.tips {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+.tips h1 {
+    text-align: center; 
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.tips .tips-container {
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.local-food {
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;        
+}
+.local-food:hover {
+    transform: translateY(-10px);
+}
+.local-food img {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px 10px 10px 10px;
+    object-fit: cover;
+}
+.local-food h1 {
+    font-size: 34px;
+    margin: 15px;
+    color: gold;
+    padding: 10px 20px 10px 10px;
+}
+#food-card img {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px 10px 10px 10px;
+    object-fit: cover;
+}
+#food-card h3 {
+    font-size: 24px;
+    margin: 15px;
+    text-align: left;
+    flex: 1;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease-in-out;
+}
+#food-card p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+    color: #666;
+    line-height: 1.5;
+}
+#food-card1 {
+    margin-top: 60px;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#food-card2 {
+    margin-top: 30px;
+    justify-content: left;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;    
+}
+#food-card3 {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+/* ========== Responsive Improvements (All Devices) ========== */
+@media (max-width: 1024px) {
+    .package-card {
+        width: 45%; /* Adjust for tablets */
+    }
+    .local-food img, #food-card img {
+        height: 300px; /* Slightly smaller images */
+    }
+}
+@media (max-width: 768px) {
+    .packages, .tips {
+        padding: 30px 0;
+    }
+    .packages h1, .tips h1 {
+        font-size: 28px; /* Smaller headings */
+    }
+    .package-card {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0 10px 20px;
+    }
+    .local-food h1 {
+        font-size: 28px; /* Smaller food title */
+    }
+}
+@media (max-width: 600px) {
+    #food-card1, #food-card2, #food-card3 {
+        flex-direction: column !important; /* Stack food cards vertically */
+        text-align: center;
+    }
+    .local-food img, #food-card img {
+        width: 100% !important; /* Full-width images */
+        height: 250px !important;
+        margin-bottom: 15px;
+    }
+    #food-card h3, #food-card p {
+        text-align: center !important; /* Center text on mobile */
+    }
+    .package-card h3 {
+        font-size: 20px; /* Smaller card titles */
+    }
+    .package-card p {
+        font-size: 14px; /* Smaller card text */
+    }
+}
+@media (max-width: 400px) {
+    .packages h1, .tips h1 {
+        font-size: 24px; /* Even smaller headings */
+    }
+    .package-card a, .package-btn {
+        padding: 8px 16px; /* Smaller buttons */
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
