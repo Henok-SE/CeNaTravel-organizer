@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CenaTour And Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="images/logo.jpg" alt="logo of CenaTour">
+        <div class="navlinks" id="nav-links">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tour.html">Blog </a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="mobile-nav">
+            <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
+        </div>
+ </nav>
+        <div class="text-box">
+            <h1>CenaTour And Travel</h1>
+            <p>Explore the world with us. Your adventure <br> starts here!Your adventure starts hereYour adventure starts here</p>
+            <a href="#services" class="hero-btn">Explore Now</a>
+        </div>
+</section>
+            <!-- blog section -->
+<section class="blog" id="home">
+    <h1>Latest Blog Posts</h1>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="images/pic2.jpg" alt="Blog Post 1">
+            <h2>Discover the Hidden Gems of Europe</h2> 
+            <p>Explore the lesser-known destinations in Europe that offer breathtaking views and unique experiences.</p>
+            <a href="#" class="blog-btn">Read More</a>
+        </div>
+        <div class="blog-card">
+            <img src="images/pic7.jpg" alt="Blog Post 2">
+            <h2>Adventure Awaits in South America</h2>
+            <p>From the Amazon rainforest to the Andes mountains, South America is a paradise for adventure seekers.</p>
+            <a href="#" class="blog-btn">Read More</a>
+        </div>
+        <div class="blog-card">
+            <img src="images/pic11 (1).jpg" alt="Blog Post 3">  
+            <h2>Relax and Unwind in the Maldives</h2>
+            <p>Experience the ultimate luxury and tranquility in the stunning islands of the Maldives.</p>
+            <a href="#" class="blog-btn">Read More</a>
+        </div>
+    </div>
+</section>
+<!-- cousterm tesitmonial section -->
+<section class="testimonial" id="testimonial">
+    <h1>What Our Customers Say</h1>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <img src="images/client1.jpg" alt="Customer 1">
+            <h2>John Doe</h2>
+            <p>"CenaTour And Travel made my vacation unforgettable! The service was exceptional and the destinations were breathtaking."</p>
+            <!-- add rating -->
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>  
+            </div>   
+        </div>
+        <div class="testimonial-card">
+            <img src="images/CEO.jpg" alt="Customer 2">
+            <h2>Jane Smith</h2>
+            <p>"I had the best experience with CenaTour And Travel. They took care of everything, and I could just relax and enjoy my trip."</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>  
+            </div> 
+        </div>
+        <div class="testimonial-card">
+            <img src="images/client3.jpg" alt="Customer 2">
+            <h2>Jane Smith</h2>
+            <p>"I had the best experience with CenaTour And Travel. They took care of everything, and I could just relax and enjoy my trip."</p>
+             <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>  
+            </div> 
+        </div>
+</section>
+            <!-- Why choose us -->
+<section class="about" id="about">
+    <h1>why choose Us</h1>
+    <p>Welcome to CenaTour And Travel, your gateway to unforgettable adventures and experiences. <br> 
+        We are dedicated to providing exceptional travel services that cater to your every need. 
+        Whether you're looking for a relaxing getaway, <br> an adventurous expedition, or a cultural immersion, 
+        we have the perfect package for you.</p>
+    <p>Our team of experienced travel experts is here to assist you in planning your dream vacation.
+         From booking flights and accommodations <br> to organizing tours and activities, 
+         we take care of every detail so you can focus on enjoying your journey.</p>
+</section>
+          <footer>
+            <p>Copyright &copy; 2023 CenaTour And Travel. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </footer>
+               
+       
+      <!-- javascript for toggeling the mobile navigation menu -->
+<script>
+// Function to open the mobile navigation menu
+var navLinks = document.getElementById("nav-links");
+function openMenu() {
+    document.getElementById("nav-links").style.right = "0";
+}
+function hideMenu() {
+    document.getElementById("nav-links").style.right = "-200px";
+}  
+</script>
+
+ </body>
+</html>
