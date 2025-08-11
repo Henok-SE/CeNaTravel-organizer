@@ -20,24 +20,49 @@
                     <li><a href="tour.html">Blog</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                 </ul>
             </div>
             <div class="mobile-nav">
                 <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
             </div>  
         </nav>
+
+         <section class="founder-section">
+  <div class="founder-container">
+    <div class="founder-image reveal">
+      <img src="images/CEO.jpg" alt="Founder Photo">
+    </div>
+    <div class="founder-text reveal">
+      <h2>About the Founder</h2>
+      <p>
+        Our founder, <strong>John Doe</strong>, started this journey with a passion for connecting people 
+        to unique travel experiences. With years of experience in the tourism industry, he has dedicated 
+        himself to ensuring every client enjoys a seamless and unforgettable adventure.
+      </p>
+      <p>
+        His vision continues to inspire our team to provide exceptional services, 
+        blending professionalism with a personal touch.
+      </p>
+    </div>
+  </div>
+</section>
+
     </section>
+
+   
+
+
     <section class="contact" id="contact">
         <h1>Contact Us</h1>
-        <div class="contact-container">
+     <div class="contact-container">
             <div class="contact-info">
                 <h2>Get in Touch</h2>
                 <p>If you have any questions or need assistance, feel free to reach out to us.</p>
                 <ul>
-                    <li><i class="fa fa-map-marker"></i> Address: 123 CenaTour Street, City, Country</li>
+                    <li><i class="fa fa-map-marker"></i> Address: 123 CenaTour Street, Hossana, Ethiopia</li>
                     <li><i class="fa fa-phone"></i> Phone: +123 456 7890</li>
-                    <li><i class="fa fa-envelope">Email: </i>
+                    <li><i class="fa fa-envelope">Email: @assefahenok33@gmail.com</i>
                 </ul> 
             </div>
             <div class="contact-form">
@@ -51,23 +76,51 @@
         </div>     
         
                         
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>We are dedicated to delivering the best service possible, focusing on quality, trust, and customer satisfaction.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
-    <footer>
-        <div class="footer-content">
-            <h3>CenaTour And Travel</h3>
-            <p>Explore the world with us. Your adventure starts here!</p>
-            <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 CenaTour And Travel. All rights reserved.</p>
-        </div>
-    </footer>
+    
 
 
     <!-- script -->
@@ -79,6 +132,26 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+        
     </script>
+
+    <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 50;
+
+      if (elementTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+
 </body>
 </html>
