@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
@@ -19,7 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tour.html">Blog</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="services.html" class="active">Tour Gallery</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -27,7 +28,189 @@
                 <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
             </div>  
         </nav>
+                  <header>
+        <h1>Our Travel Destinations</h1>
+        <p>Journey through our most breathtaking adventures</p>
+    </header>
+
+    
+
     </section>
+
+    <style>
+        /* Modern Styling */
+        :root {
+            --primary: #2a5c8b;  /* Centaur blue */
+            --secondary: #e9c46a; /* Gold accent */
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        
+        header {
+          
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        /* Gallery Grid - Responsive */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-image {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card-content h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        
+        .card-content p {
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <section class="intro">
+        <h2>Where Myth Meets Adventure</h2>
+        <p>At Centaur Travel, we specialize in <span class="highlight">extraordinary journeys</span> that blend luxury with authentic experiences. Below are some of our signature destinations where we've created unforgettable memories for our travelers.</p>
+    </section>
+    
+    <div class="gallery">
+        <!-- Destination 1 -->
+        <div class="destination-card">
+            <img src="images/t2.jpg" alt="Santorini, Greece" class="card-image">
+            <div class="card-content">
+                <h3>Santorini, Greece</h3>
+                <p>Our <span class="highlight">Aegean Escape</span> package includes private yacht tours of the caldera, sunset dinners in Oia, and stays in premium cave hotels.</p>
+                <p>🕒 7-Day Itinerary | ✈️ Seasonal Flights Included</p>
+            </div>
+        </div>
+        
+        <!-- Destination 2 -->
+        <div class="destination-card">
+            <img src="images/tour.jpg" alt="Amazon Rainforest" class="card-image">
+            <div class="card-content">
+                <h3>Amazon Rainforest</h3>
+                <p>The <span class="highlight">Jungle Expedition</span> takes you deep into biodiversity hotspots with expert guides, canopy walks, and eco-lodges.</p>
+                <p>🕒 10-Day Adventure | 🌿 Conservation-Focused</p>
+            </div>
+        </div>
+        
+        <!-- Destination 3 -->
+        <div class="destination-card">
+            <img src="images/t3.jpg" alt="Kyoto, Japan" class="card-image">
+            <div class="card-content">
+                <h3>Kyoto, Japan</h3>
+                <p>Our <span class="highlight">Cherry Blossom Cultural Tour</span> features tea ceremonies, samurai workshops, and stays in traditional ryokans.</p>
+                <p>🕒 9-Day Journey | 🎎 Limited Spring Availability</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="images/t5.jpg" alt="Kyoto, Japan" class="card-image">
+            <div class="card-content">
+                <h3>Kyoto, Japan</h3>
+                <p>Our <span class="highlight">Cherry Blossom Cultural Tour</span> features tea ceremonies, samurai workshops, and stays in traditional ryokans.</p>
+                <p>🕒 9-Day Journey | 🎎 Limited Spring Availability</p>
+            </div>
+        </div>
+             <div class="destination-card">
+            <img src="images/t4.jpg" alt="Amazon Rainforest" class="card-image">
+            <div class="card-content">
+                <h3>Amazon Rainforest</h3>
+                <p>The <span class="highlight">Jungle Expedition</span> takes you deep into biodiversity hotspots with expert guides, canopy walks, and eco-lodges.</p>
+                <p>🕒 10-Day Adventure | 🌿 Conservation-Focused</p>
+            </div>
+        </div>
+        
+             <div class="destination-card">
+            <img src="images/tour6.jpg" alt="Amazon Rainforest" class="card-image">
+            <div class="card-content">
+                <h3>Amazon Rainforest</h3>
+                <p>The <span class="highlight">Jungle Expedition</span> takes you deep into biodiversity hotspots with expert guides, canopy walks, and eco-lodges.</p>
+                <p>🕒 10-Day Adventure | 🌿 Conservation-Focused</p>
+            </div>
+        </div>
+        
+    </div>
+
+          <!-- travel tips -->
+        <section class="tips">
+            <h1>Travel Tips</h1>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <h2>Pack Smart</h2>
+                    <p>Make a packing list and stick to it. Don't forget essentials like travel documents, medications, and chargers.</p>
+                </div>
+                <div class="tip-card">
+                    <h2>Stay Hydrated</h2>
+                    <p>Drink plenty of water, especially during long flights or hikes. Carry a reusable water bottle.</p>
+                </div>
+                <div class="tip-card">
+                    <h2>Respect Local Customs</h2>
+                    <p>Learn about the local culture and customs of your destination to avoid misunderstandings.</p>
+                </div>
+                <div class="tip-card">
+                    <h2>Keep Valuables Safe</h2>
+                    <p>Use a money belt or hidden pouch for important documents and valuables while traveling.</p>
+                </div>
+            </div>
+        </section> 
 
 <footer class="footer">
   <div class="footer-container">
