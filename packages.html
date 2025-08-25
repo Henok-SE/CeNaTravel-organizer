@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CenaTour And Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Section Styling */
+.services {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.heading span {
+  color: #0d6efd; /* blue highlight */
+}
+
+.sub-heading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Service Card */
+.service-card {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.service-card i {
+  font-size: 2.8rem;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.service-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .service-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="images/logo1.jpg" alt="logo of CenaTour">
+        <div class="navlinks" id="nav-links">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tour.html">Blog </a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html" class="active">services</a></li>
+                <li><a href="services.html">Tour Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="mobile-nav">
+            <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
+        </div>
+ </nav>
+        <div class="text-box">
+            <h1>Our services</h1>
+            <p> We have a lot of services to satisfy your travel need.  
+                Explore the world with us. Your adventure <br> starts here!Your adventure starts hereYour adventure starts here</p>
+        </div>
+</section>
+ 
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h1 class="heading">✨ Our Services at <span>Cena Travel</span></h1>
+    <p class="sub-heading">We make your travel simple, enjoyable, and unforgettable</p>
+
+    <div class="services-container">
+
+      <div class="service-card">
+        <i class="fas fa-route"></i>
+        <h2>Travel Planning</h2>
+        <p>Organizing customized trips and tours tailored to your desires and schedule.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-hiking"></i>
+        <h2>Excursion Arrangements</h2>
+        <p>Coordinating short trips and excursions for fun and adventure.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-users"></i>
+        <h2>Personalized Packages</h2>
+        <p>Travel experiences for families, couples, churches, schools, offices, and more.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-tshirt"></i>
+        <h2>Traditional Clothing Rental</h2>
+        <p>Providing a variety of cultural and traditional outfits for rent.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-car"></i>
+        <h2>Car Rental Services</h2>
+        <p>Offering reliable vehicles for safe and comfortable travel.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-compass"></i>
+        <h2>Travel Consultancy & More</h2>
+        <p>Delivering expert guidance and additional travel-related services.</p>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- About Cena Travel Section -->
+  <section class="about-cena">
+    <div class="about-container">
+      <h2>🌍 Why Choose <span>Cena Travel</span>?</h2>
+      <p>
+        Cena Travel is the only legally licensed tourism company in the Central Ethiopia Region. 
+        We proudly serve travelers from Ethiopia and beyond who wish to explore any city or destination across the country.
+      </p>
+      <p>
+        Being based in the Central Region gives us the advantage of providing full travel services to all zones, special districts, 
+        and cultural destinations within the region. From natural wonders to historic sites and local traditions, 
+        we make sure every visitor experiences the richness of Ethiopia.
+      </p>
+      <p>
+        To make your journey easier, we provide detailed travel information, guides, and photos for every tour package — 
+        ensuring you have everything you need before you begin your adventure.
+      </p>
+      <p class="highlight">✨ With Cena Travel, your Ethiopian journey is legal, reliable, and unforgettable.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>We are dedicated to delivering the best service possible, focusing on quality, trust, and customer satisfaction.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
+  </div>
+</footer>
+
+      <!-- javascript for toggeling the mobile navigation menu -->
+<script>
+// Function to open the mobile navigation menu
+var navLinks = document.getElementById("nav-links");
+function openMenu() {
+    document.getElementById("nav-links").style.right = "0";
+}
+function hideMenu() {
+    document.getElementById("nav-links").style.right = "-200px";
+}  
+</script>
+
+</body>
+</html>
