@@ -68,3 +68,24 @@
 - [Add others as appropriate...]
 
 ---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to [open an issue](https://github.com/Henok-SE/CeNaTravel-organizer/issues) or submit a pull request.
+
+**Steps to contribute:**
+1. Fork the repository.
+2. Create your branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Open a pull request.
+
+---
+
+## 🙌 Support
+
+If you like this project, give it a ⭐️!  
+Questions? Reach out via [Issues](https://github.com/Henok-SE/CeNaTravel-organizer/issues) or [email](mailto:your-email@example.com).
+
+---
