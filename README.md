@@ -89,3 +89,13 @@ If you like this project, give it a ⭐️!
 Questions? Reach out via [Issues](https://github.com/Henok-SE/CeNaTravel-organizer/issues) or [email](mailto:your-email@example.com).
 
 ---
+
+## ©️ License
+
+This project is [MIT Licensed](LICENSE).
+
+---
+
+<p align="center">
+  <b>Happy Travels!</b> 🚀
+</p>
