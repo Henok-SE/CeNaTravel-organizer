@@ -11,3 +11,25 @@
 **CeNaTravel Organizer** is designed to help solo explorers, families, and travel groups plan, organize, and enjoy stress-free trips! Easily manage your destinations, itineraries, bookings, and important documents—right in one place.
 
 ---
+
+## 🎯 Features
+
+- 🗺️ **Trip Planning:** Create detailed itineraries and add multiple stops.
+- 🧳 **Packing Lists:** Never forget essentials with customizable packing lists.
+- 📅 **Schedule Management:** Sync events and notifications with your calendar.
+- 👫 **Group Collaboration:** Share trips and plans with friends or travel buddies.
+- 📈 **Travel Analytics:** Keep track of expenses and travel stats.
+- ☁️ **Cloud Sync:** Access and update your plans from any device.
+- 🔒 **Privacy First:** Your trip details are secure and only shared with your consent.
+
+---
+
+## 🖥️ Screenshots
+
+<p align="center">
+  <img src="https://github.com/Henok-SE/CeNaTravel-organizer/assets/demo1.png" width="250" alt="Dashboard Screenshot"/>
+  <img src="https://github.com/Henok-SE/CeNaTravel-organizer/assets/demo2.png" width="250" alt="Itinerary Screenshot"/>
+  <img src="https://github.com/Henok-SE/CeNaTravel-organizer/assets/demo3.png" width="250" alt="Packing List Screenshot"/>
+</p>
+
+---
