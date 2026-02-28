@@ -33,3 +33,38 @@
 </p>
 
 ---
+
+## ⚡ Quick Start
+
+1. **Clone the repo**
+    ```sh
+    git clone https://github.com/Henok-SE/CeNaTravel-organizer.git
+    cd CeNaTravel-organizer
+    ```
+
+2. **Install dependencies**
+    ```sh
+    # assuming a Node.js project
+    npm install
+    ```
+
+3. **Set up environment variables**
+    - Copy `.env.example` to `.env` and update with your configuration.
+
+4. **Run the app**
+    ```sh
+    npm start
+    ```
+
+---
+
+## 🛠️ Technologies Used
+
+- JavaScript / TypeScript
+- Node.js
+- React (or your frontend library)
+- Express (or backend framework)
+- MongoDB / SQL (or your database)
+- [Add others as appropriate...]
+
+---
